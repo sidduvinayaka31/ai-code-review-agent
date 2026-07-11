@@ -1,0 +1,7 @@
+streamlit==1.33.0
+langchain==0.1.16
+langchain-community==0.0.34
+langchain-google-genai==1.0.3
+chromadb==0.4.24
+javalang==0.13.0
+pydantic==2.7.0

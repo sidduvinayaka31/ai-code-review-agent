@@ -1,0 +1,14 @@
+# Virtual Environments
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets and Environment Variables (DO NOT COMMIT)
+.env
+
+# ChromaDB Vector Database local storage
+chroma_db/
