@@ -1,3 +1,9 @@
+<img width="1918" height="1012" alt="Screenshot 2026-07-11 130350" src="https://github.com/user-attachments/assets/d4741673-6133-4f83-846b-97a1e3d16841" />
+<img width="1918" height="1017" alt="Screenshot 2026-07-11 130305" src="https://github.com/user-attachments/assets/c6f36d9c-2389-44bf-ad06-bc85209e5dc2" />
+<img width="1918" height="1018" alt="Screenshot 2026-07-11 130218" src="https://github.com/user-attachments/assets/ec8aecff-26e0-4d96-859c-a33d17c33077" />
+<img width="1918" height="1007" alt="Screenshot 2026-07-11 125916" src="https://github.com/user-attachments/assets/598afd92-76ad-455c-9bd4-e265a56bd110" />
+<img width="1918" height="1021" alt="Screenshot 2026-07-11 125815" src="https://github.com/user-attachments/assets/b671ed1d-d15f-46ac-a182-a373a1c981f7" />
+<img width="1918" height="1018" alt="Screenshot 2026-07-11 125636" src="https://github.com/user-attachments/assets/e2e028f9-62f7-4b39-a489-145c1f19d1cb" />
 # 🛡️ AI Code Review & Security Analysis Agent
 
 Welcome to the **AI Code Review & Security Analysis Agent** developer portal! This project is being built to automatically analyze source code for quality issues, security vulnerabilities, and best practice violations.
