@@ -1,7 +1,7 @@
 import os
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_text_splitters import MarkdownTextSplitter
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.embeddings import FastEmbedEmbeddings
 from langchain_community.vectorstores import Chroma
 from dotenv import load_dotenv
 
@@ -30,9 +30,8 @@ def initialize_knowledge_base():
     
     print(f"Split into {len(docs)} chunks.")
 
-    # Initialize Gemini Embeddings
-    # Requires GOOGLE_API_KEY to be set in environment variables
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    # Use FastEmbed (lightweight ONNX-based) — no PyTorch, no quota, no Windows path issues
+    embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     
     print("Initializing ChromaDB and embedding chunks...")
     vectorstore = Chroma.from_documents(
@@ -46,7 +45,8 @@ def initialize_knowledge_base():
 
 def get_retriever():
     """Returns a retriever for querying the knowledge base."""
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    # Must use same model as initialize_knowledge_base()
+    embeddings = FastEmbedEmbeddings(model_name="BAAI/bge-small-en-v1.5")
     vectorstore = Chroma(persist_directory=PERSIST_DIRECTORY, embedding_function=embeddings)
     return vectorstore.as_retriever()
 
